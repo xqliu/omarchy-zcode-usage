@@ -1,4 +1,5 @@
 import QtQuick
+import Quickshell
 import Quickshell.Io
 
 // Headless service: periodically runs the bundled collector.py and installs

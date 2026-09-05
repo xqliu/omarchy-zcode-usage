@@ -20,6 +20,23 @@ appears in the panel you already have. No second bar icon, no duplicate panel.
 - No rate-limit meters: Z.ai's coding plan has no local quota endpoint, so
   the panel only renders the local statistics for this agent.
 
+### The ZCode mark (optional)
+
+The Agents panel loads each agent's logo from its own plugin folder, so on a
+stock install the ZCode tab uses the panel's generic glyph. To get the ZCode
+mark, clone the panel into your plugin directory once and copy the SVG
+bundled with this repo (`assets/zcode.svg`) into the clone:
+
+```sh
+omarchy plugin clone omarchy.agents
+cp assets/zcode.svg ~/.config/omarchy/plugins/<you>.agents/assets/
+```
+
+(`<you>.agents` is whatever folder `omarchy plugin clone` printed.) The clone
+is yours to edit and survives updates; remove it to go back to the stock
+panel.
+
+
 All numbers are read-only local statistics: per-turn and per-model-request
 token counts from ZCode's own SQLite database at `~/.zcode/cli/db/db.sqlite`,
 opened in read-only mode. Nothing is sent anywhere.
