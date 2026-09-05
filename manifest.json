@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.xqliu.zcode-usage",
+  "name": "ZCode Usage",
+  "version": "1.0.0",
+  "author": "Lawrence Liu",
+  "license": "MIT",
+  "description": "Shows ZCode (Z.ai coding plan) token usage in the built-in Agents bar panel.",
+  "kinds": ["service"],
+  "entryPoints": {
+    "service": "Service.qml"
+  }
+}
